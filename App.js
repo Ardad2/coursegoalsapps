@@ -6,7 +6,7 @@ export default function App() {
       <View>
       <Text>Another piece of text!</Text>
       </View>
-      <Text>Hello World!</Text>
+      <Text style={{margin: 16}}>Hello World!</Text>
       <Button title = "Tap me!"/>
     </View>
   );
