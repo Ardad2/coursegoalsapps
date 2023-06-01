@@ -1,8 +1,8 @@
-import { StyleSheet, Text, View, Button} from 'react-native';
+import { StyleSheet, Text, View, Button, TextInput} from 'react-native';
 
 export default function App() {
   return (
-    <View>
+    <View style={styles.appContainer}>
       <View>
         <TextInput placeholder="Your course goal!" />
         <Button title="Add Goal"/>
@@ -15,5 +15,7 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
-
+  appContainer: {
+    padding: 50,
+  },
 });
