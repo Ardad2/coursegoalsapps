@@ -20,7 +20,7 @@ export default function App() {
   
   function addGoalHandler() {
     console.log(enteredGoalText);
-    setCourseGoals(currentCourseGoals => [...currentCourseGoals, {text: enteredGoalText, key: Math.random().toString() }       ]);
+    setCourseGoals(currentCourseGoals => [...currentCourseGoals, {text: enteredGoalText, id: Math.random().toString() }       ]);
   };
 
   return (
@@ -45,7 +45,10 @@ export default function App() {
               </View>
           );
 
-        }} alwaysBounceVertical={false}/> 
+        }}
+        keyExtractor={(item,index) => {return item.id}} 
+        alwaysBounceVertical={false}
+        /> 
         </View>
       </View>
   );
